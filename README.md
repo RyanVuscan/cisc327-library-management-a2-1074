@@ -1,3 +1,5 @@
+[![Python CI - CISC327 Library Management](https://github.com/RyanVuscan/cisc327-library-management-a2-1074/actions/workflows/py-tests.yml/badge.svg)](https://github.com/RyanVuscan/cisc327-library-management-a2-1074/actions/workflows/py-tests.yml)
+
 # Library Management System - Flask Web Application with SQLite
 
 ## Overview
@@ -47,5 +49,6 @@ See [`student_instructions.md`](student_instructions.md) for complete assignment
 - [Test Driven Development](https://www.datacamp.com/tutorial/test-driven-development-in-python)
 - [Pytest framework](https://realpython.com/pytest-python-testing/)
 - [Python Blueprint](https://flask.palletsprojects.com/en/stable/blueprints)
+
 
 
