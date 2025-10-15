@@ -28,5 +28,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest -v a1_tests.py
-        pytest -v a2_llm_tests.py
+        pytest -v
