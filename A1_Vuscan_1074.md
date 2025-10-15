@@ -1,0 +1,5 @@
+| -------- | Add Book To Catalog | Book Catalog Display | Book Borrowing Interface | Book Return Processing | Late Fee Calculation API | Book Search Functionality | Patron Status Report
+| -------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| Implementation Status | Complete | Mostly Complete | Complete | Incomplete | Incomplete | Incomplete | Incomplete |
+| Missing Functionality | None | CSS issue: long book titles push the book catalog table out of bounds | None | Unable to process return, functionality not implemented | Late fee GET request isn't called because the book return function does not work; No JSON returned | No type of search type works, all return an error | No menu option to access the Patron Status Report appears, unable to execute functionality|
+| Tests result | Failures present | N/A | Failures present | N/A | N/A | N/A | N/A |
