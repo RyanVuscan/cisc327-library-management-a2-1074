@@ -28,5 +28,5 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest -v cisc327-library-management-a2-1074/a1_tests.py
-        pytest -v cisc327-library-management-a2-1074/a1_tests.py
+        pytest -v a1_tests.py
+        pytest -v a2_llm_tests.py
