@@ -11,7 +11,7 @@ from library_service import (
 
 # R1 tests (LLM generated)
 def test_add_book_valid_entry():
-    ok, msg = add_book_to_catalog("War and Peace", "Leo Tolstoy", "1234567890123", 3)
+    ok, msg = add_book_to_catalog("War and Peace", "Leo Tolstoy", "9876543210123", 3)
     assert ok is True
     assert "successfully" in msg.lower()
 
@@ -26,7 +26,7 @@ def test_add_book_missing_title():
     assert ok is False
 
 def test_add_book_invalid_copies():
-    ok, msg = add_book_to_catalog("Book", "Author", "1234567890123", 0)
+    ok, msg = add_book_to_catalog("Book", "Author", "1012398765432", 0)
     assert ok is False
     assert "positive integer" in msg
 

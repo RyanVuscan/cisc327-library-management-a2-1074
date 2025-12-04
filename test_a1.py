@@ -27,38 +27,38 @@ def test_add_book_invalid_isbn_too_short():
 # R1 Tests (non-AI)
 
 def test_add_book_isbn_too_long():
-    success, message = add_book_to_catalog("Test Book", "Test Author", "1234567823123123123123", 5)
+    success, _ = add_book_to_catalog("Test Book", "Test Author", "1234567823123123123123", 5)
     assert success is False
 
 def test_add_book_num_int_check():
-    success = add_book_to_catalog("Test Book", "Test Author", "1234567890123", -4)
+    success, _ = add_book_to_catalog("Test Book", "Test Author", "1234567890123", -4)
     assert success is False
 
 def test_add_book_missing_entry():
-    success = add_book_to_catalog("Test Book", "1234567890123", 2)
+    success, _ = add_book_to_catalog("Test Book", "1234567890123", 2)
     assert success is False
 
 def test_add_book_special_symbols():
-    success = add_book_to_catalog("!@#$%^&*(-=)", "Test Author", "1234567890123", 1)
+    success, _ = add_book_to_catalog("!@#$%^&*(-=)", "Test Author", "1234567890123", 1)
     assert success is True
 
 
 # R3 Tests (non-AI)
 
 def test_patron_id_too_long():
-    success, message = borrow_book_by_patron("123123123", 1)
+    success, _ = borrow_book_by_patron("123123123", 1)
     assert success == False
 
 def test_patron_id_non_digit():
-    success = borrow_book_by_patron("abcdef", 2)
+    success, _ = borrow_book_by_patron("abcdef", 2)
     assert success is False
 
 def test_correct_borrow():
-    success = borrow_book_by_patron("123456", 3)
+    success, _ = borrow_book_by_patron("123456", 3)
     assert success is True
 
 def test_book_id_non_digit():
-    success = borrow_book_by_patron("123456", "xyz")
+    success, _ = borrow_book_by_patron("123456", "xyz")
     assert success is False
 
 
