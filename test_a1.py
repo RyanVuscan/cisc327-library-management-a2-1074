@@ -35,11 +35,11 @@ def test_add_book_num_int_check():
     assert success is False
 
 def test_add_book_missing_entry():
-    success, _ = add_book_to_catalog("Test Book", "1234567890123", 2)
+    success, _ = add_book_to_catalog("Test Book", "", "0000567890123", 2)
     assert success is False
 
 def test_add_book_special_symbols():
-    success, _ = add_book_to_catalog("!@#$%^&*(-=)", "Test Author", "1234567890123", 1)
+    success, _ = add_book_to_catalog("!@#$%^&*(-=)", "Test Author", "1234567890000", 1)
     assert success is True
 
 
@@ -54,7 +54,7 @@ def test_patron_id_non_digit():
     assert success is False
 
 def test_correct_borrow():
-    success, _ = borrow_book_by_patron("123456", 3)
+    success, _ = borrow_book_by_patron("222222", 2)
     assert success is True
 
 def test_book_id_non_digit():
