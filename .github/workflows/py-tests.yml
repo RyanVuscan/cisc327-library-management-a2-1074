@@ -23,9 +23,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pytest
-        # Add other deps if needed (Flask, etc.)
         pip install flask
+        pip install requests
 
     - name: Run tests
       run: |
-        pytest -v
+        pytest -v tests
