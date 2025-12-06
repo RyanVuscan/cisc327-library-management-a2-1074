@@ -1,4 +1,5 @@
 import pytest
+from database import init_database, add_sample_data
 from services.library_service import (
     add_book_to_catalog,
     borrow_book_by_patron,
@@ -8,6 +9,10 @@ from services.library_service import (
     get_patron_status_report,
 
 )
+
+# Initialize database once at module load
+init_database()
+add_sample_data()
 
 # R1 tests (LLM generated)
 def test_add_book_valid_entry():
