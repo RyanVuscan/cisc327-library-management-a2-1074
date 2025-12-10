@@ -1,0 +1,41 @@
+# Don't copy these files into the Docker container
+# They're not needed and just waste space
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyc
+.pytest_cache/
+
+# Virtual environment (Docker has its own Python)
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Testing output
+htmlcov/
+.coverage
+
+# Git files
+.git/
+.gitignore
+
+# Documentation (not needed to run the app)
+*.md
+*.pdf
+banner.png
+
+# Docker files (don't need to copy Dockerfile into itself!)
+Dockerfile
+.dockerignore
+
+# Database (optional - remove this line if you want to keep existing data)
+# *.db
+
+# OS files
+.DS_Store
+Thumbs.db
